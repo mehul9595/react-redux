@@ -18,7 +18,7 @@ const TodoInput = (props) => {
   return (
     <div>
       <input onChange={handleChange} value={todoText} />
-      <button type="button" onClick={handleClick}>
+      <button type="button" onClick={handleClick} style={{margin: '0 10px'}}>
         Add Todo
       </button>
     </div>

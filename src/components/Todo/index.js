@@ -16,7 +16,7 @@ const Todo = ({ todo }) => {
   return (
     <div>
       <li
-        className={"todo-li " + (todo.completed && "todo-li-completed")}
+        className={"todo-li " + (todo.completed ? "todo-li-completed" : "")}
         key={`todoitem-li-${todo.id}`}
         onClick={() => onToggleHandle(todo.id)}
       >

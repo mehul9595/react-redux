@@ -11,5 +11,7 @@
 
 .delete-btn {
     margin-left: 25px;
-    color: red;
+    background-color: coral;
+    border-radius: 5px;
+    width: 50px;
 }

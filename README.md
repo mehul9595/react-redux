@@ -2,7 +2,7 @@
 
 This project is simple Todo app built latest features of React, Redux and Hooks. Aim of this project is to demonstrate the simplicity and usage of the new hooks feature introduced in Redux and React. 
 
-This project demonstrates the functional component based approach for the (Official React Redux Todo Sample)[https://codesandbox.io/s/9on71rvnyo].
+This project demonstrates the functional component based approach for the [Official React Redux Todo Sample](https://codesandbox.io/s/9on71rvnyo).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

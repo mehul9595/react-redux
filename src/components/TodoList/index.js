@@ -1,9 +1,11 @@
 import React, { useDebugValue } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Todo from "../Todo";
+import { TodoSelector } from "../../reducers/selectors";
 
 const TodoList = (props) => {
-  const todos = useSelector((state) => state.TodosStore.todos);
+  const visibilityFilter = useSelector((state) => state.VisibilityFilter);
+  const todos = useSelector(state => TodoSelector(state.TodosStore.todos, visibilityFilter));
 
   return (
     <ul>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 const TodoInput = (props) => {
   const dispatch = useDispatch();
-  // const number = useSelector((state) => state.TodosStore.num);
   const [todoText, setTodoText] = useState("");
 
   const handleChange = (e) => {

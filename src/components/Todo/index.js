@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import "./style.css";
 
 const Todo = ({ todo }) => {
   const dispatch = useDispatch();
@@ -9,16 +10,23 @@ const Todo = ({ todo }) => {
   };
 
   const onToggleHandle = (params) => {
-      dispatch({type: "TOGGLE_TODOS", todoId: params});
-  }
-  
+    dispatch({ type: "TOGGLE_TODOS", todoId: params });
+  };
+
   return (
     <div>
-      <li key={`todoitem-li-${todo.id}`}>
+      <li
+        className={"todo-li " + (todo.completed && "todo-li-completed")}
+        key={`todoitem-li-${todo.id}`}
+        onClick={() => onToggleHandle(todo.id)}
+      >
         <div>
-          <span>{todo.text}</span>
-          <span onClick={onDelete.bind(null, todo.id)}>x</span>
-          <span onClick={onToggleHandle.bind(null, todo.id)}>mark as done</span>
+          <span>
+            {todo && todo.completed ? "👌" : "👋"} {todo.text}
+          </span>
+          <button className="delete-btn" onClick={() => onDelete(todo.id)}>
+            x
+          </button>
         </div>
       </li>
     </div>

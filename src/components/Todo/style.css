@@ -1,0 +1,15 @@
+.todo-li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.todo-li-completed {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+
+.delete-btn {
+    margin-left: 25px;
+    color: red;
+}

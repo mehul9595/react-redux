@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import React from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import VisibilityFilters from './components/VisibilityFilters';
 
 function App() {
   const todoCount = useSelector((state) => state.TodosStore.todoCount);
@@ -11,26 +12,7 @@ function App() {
       <div>Hello Todo Items - {todoCount}</div>
       <TodoInput />
       <TodoList />
-      {/* <button
-        onClick={() =>
-          dispatch({
-            type: "ADD_TODOS",
-            step: 1
-          })
-        }
-      >
-        Increment
-      </button>
-      <button 
-        onClick={() =>
-          dispatch({
-            type: "DELETE_TODOS",
-            step: 1
-          })
-        }
-      >
-        Decrement
-      </button>*/}
+      <VisibilityFilters />
     </div>
   );
 }

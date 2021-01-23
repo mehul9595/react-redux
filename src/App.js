@@ -5,7 +5,7 @@ import TodoList from "./components/TodoList";
 import VisibilityFilters from './components/VisibilityFilters';
 
 function App() {
-  const todoCount = useSelector((state) => state.TodosStore.todoCount);
+  const todoCount = useSelector((state) => state.TodosStore.todos.length);
   
   return (
     <div className="App">

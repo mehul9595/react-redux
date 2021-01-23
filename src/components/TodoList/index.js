@@ -22,7 +22,7 @@ const TodoList = (props) => {
             //   </li>
             // );
           })
-        : "null"}
+        : "No more todos!"}
     </ul>
   );
 };

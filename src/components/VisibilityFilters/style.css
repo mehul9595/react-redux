@@ -2,3 +2,7 @@
     text-decoration: underline;
     padding: 0 10px;
 }
+
+.filter.active {
+    font-weight: bold;
+}
